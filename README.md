@@ -66,6 +66,32 @@ pnpm run typecheck
 - Raw `@font-face` declarations (no `next/font/local`) to preserve TE's exact `te-20`, `te-40` family naming
 - Pure-CSS `:hover` icon morphs using TE's own `transform-box: fill-box` mechanism
 
+## Ground-truth archives
+
+The `docs/archives/` directory contains three WACZ (Web Archive Collection Zipped) files — one per page — captured via [browsertrix-crawler](https://github.com/webrecorder/browsertrix-crawler) at the time the clone was built. These are full replayable snapshots of the live site: original JS bundles, CSS, fonts, images, and network requests.
+
+| Archive | Size | Page |
+|---|---|---|
+| `te-home.wacz` | 35 MB | `https://teenage.engineering/` |
+| `te-products.wacz` | 54 MB | `https://teenage.engineering/products` |
+| `te-now.wacz` | 49 MB | `https://teenage.engineering/now` |
+
+### How to replay
+
+- Open [replayweb.page](https://replayweb.page) in any browser.
+- Drop the `.wacz` file onto the page, or paste a URL to it.
+- The archive renders like the live site — WebGL canvases, GSAP timelines, React hydration all execute because the replay serves the original JS bundles.
+
+Or locally via the Webrecorder `pywb` server:
+
+```bash
+pip install pywb
+wayback --collection te-home ./docs/archives/te-home.wacz
+# then http://localhost:8080/te-home/https://teenage.engineering/
+```
+
+Captured anonymously (no auth, no cookies). See attribution notes above — the archive contents remain TE's IP.
+
 ## Known gaps (honest)
 
 - Mobile breakpoint (`@media (min-width: 768px)`) collapse is best-effort; desktop 1440 is the primary target.
