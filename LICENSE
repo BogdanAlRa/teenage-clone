@@ -1,0 +1,50 @@
+MIT License
+
+Copyright (c) 2026 Bogdan Alexandru Radu
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+NOTICE: This MIT License applies ONLY to the original source code authored for
+this repository (primarily the contents of src/, scripts/, and the analytical
+Markdown files under docs/research/**/*.md).
+
+It does NOT extend to any third-party assets included for reproducibility
+purposes, specifically:
+
+  - the TE20 and TE40 woff2 font files under public/fonts/, which are the
+    property of Monotype Imaging Inc. and are licensed to teenage engineering
+    for use on teenage.engineering;
+
+  - the product photography, SVG artwork, and favicon under public/images/
+    and public/seo/, which are the property of teenage engineering AB;
+
+  - the scraped HTML and CSS files under docs/research/*/raw.html and
+    docs/research/home/root.css, which are the property of teenage
+    engineering AB.
+
+These third-party materials are included solely for educational and study
+purposes under a good-faith fair-use interpretation. They are not licensed
+under the MIT License and may not be redistributed, modified, or used
+commercially without permission from their respective owners. See README.md
+for contact information and removal-on-request policy.
+
+The scaffold was initially generated from the public
+JCodesMore/ai-website-cloner-template project (also MIT-licensed). Portions
+of the template code, config files, and documentation structure are retained
+from that upstream.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
